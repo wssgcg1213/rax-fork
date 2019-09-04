@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: SETUP
-          command: npm run setup
+          command: npm i && npm run setup
       - run:
           name: LINT
           command: npm run lint:nofix
