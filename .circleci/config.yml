@@ -1,15 +1,16 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
       - image: circleci/node:latest
     steps:
+      - checkout
       - run:
-        - name: SETUP
-        - command: npm run setup
+          name: SETUP
+          command: npm run setup
       - run:
-        - name: LINT
-        - command: npm run lint:nofix
+          name: LINT
+          command: npm run lint:nofix
       - run:
-        - name: JEST
-        - command: npm run test
+          name: JEST
+          command: npm run test
