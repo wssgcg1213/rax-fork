@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  tests:
+  build:
     docker:
       - image: circleci/node:latest
     steps:
