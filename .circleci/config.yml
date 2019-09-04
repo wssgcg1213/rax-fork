@@ -8,8 +8,8 @@ jobs:
         - name: SETUP
         - command: npm run setup
       - run:
-          - name: LINT
-          - command: npm run lint:nofix
+        - name: LINT
+        - command: npm run lint:nofix
       - run:
-          - name: JEST
-          - command: npm run test
+        - name: JEST
+        - command: npm run test
